@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Report Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 80px; }
+        h1 { color: #333; }
+        input, textarea { width: 400px; margin-bottom: 15px; padding: 10px; }
+        textarea { height: 200px; }
+        button { padding: 10px 20px; border: none; border-radius: 5px;
+                 background-color: #4CAF50; color: white; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <h1>Auto PDF Report Generator</h1>
+    <form method="post" action="/generate/">
+        <input type="text" name="heading" placeholder="Enter your report heading" required><br>
+        <textarea name="content" placeholder="Write your paragraphs here..." required></textarea><br>
+        <button type="submit">Generate PDF</button>
+    </form>
+</body>
+</html>
